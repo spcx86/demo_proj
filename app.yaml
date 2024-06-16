@@ -19,5 +19,5 @@ service: demoapp
 #   max_concurrent_requests: 5
 
 basic_scaling:
-  idle_timeout: 1m
+  idle_timeout: 10m
   max_instances: 1

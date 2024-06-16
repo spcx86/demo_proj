@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-&qsk3##0_5dh6!tg+@9=x)iou%lncs6x-&47-6ck07lzxjcac7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['34.172.35.149', 'your-domain.com', 'localhost', '127.0.0.1']
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
@@ -98,11 +98,12 @@ WSGI_APPLICATION = "myproject.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': '/tmp/db.sqlite3',
     }
 }
+
 
 
 # Password validation
